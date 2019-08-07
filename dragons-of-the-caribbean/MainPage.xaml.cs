@@ -13,16 +13,26 @@ namespace dragons_of_the_caribbean
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+
         public MainPage()
         {
             InitializeComponent();
         }
+
+        //public MainPage(DragonOptionPage dragonOptionPage)
+        //{
+        //    this.dragonOptionPage = dragonOptionPage;
+        //}
 
         async void OnButtonClicked(object sender, EventArgs args)
         {
             await label.RelRotateTo(360, 1000);
         }
 
+        async void OnOptionsClicked(object sender, EventArgs args)
+        {
+            await Navigation.PushAsync(new DragonOptionPage());
+        }
 
     }
 }

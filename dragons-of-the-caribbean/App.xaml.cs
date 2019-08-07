@@ -10,7 +10,8 @@ namespace dragons_of_the_caribbean
         {
             InitializeComponent();
 
-            MainPage = new MainPage( new DragonOptionPage() );
+            MainPage = new NavigationPage( new MainPage());
+
             //DragonOptionPage = new DragonOptionPage();
         }
 
