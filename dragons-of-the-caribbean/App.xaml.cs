@@ -10,7 +10,8 @@ namespace dragons_of_the_caribbean
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MainPage( new DragonOptionPage() );
+            //DragonOptionPage = new DragonOptionPage();
         }
 
         protected override void OnStart()
