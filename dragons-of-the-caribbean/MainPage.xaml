@@ -1,7 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="dragons_of_the_caribbean.MainPage">
-    <StackLayout Padding="50">
-         <!--Place new controls here--> 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="dragons_of_the_caribbean.MainPage">
+    
+    <StackLayout Padding="50"
+                 Margin="20,35,20,20">
+         <!--Place new controls here-->
+        <Image Source="https://unsplash.com/photos/z3QZ6gjGRt4"
+               HeightRequest="300"/>
         <Label x:Name="label"
                Text="Dragons Of The Caribbean"
                FontFamily="Lobster"

@@ -130,4 +130,7 @@
       <Name>dragons-of-the-caribbean</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\doctormo_Dring_and_Drang.svg" />
+  </ItemGroup>
 </Project>
