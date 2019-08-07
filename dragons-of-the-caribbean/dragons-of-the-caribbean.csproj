@@ -13,4 +13,11 @@
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.618606" />
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="crocs.jpg" />
+    <None Remove="Images\crocs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="LocalImages.cs" />
+  </ItemGroup>
 </Project>

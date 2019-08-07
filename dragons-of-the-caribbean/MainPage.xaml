@@ -9,8 +9,9 @@
     <StackLayout Padding="50"
                  Margin="20,35,20,20">
          <!--Place new controls here-->
-        <Image Source="https://unsplash.com/photos/z3QZ6gjGRt4"
+        <Image Source="drawable/crocs.jpg"
                HeightRequest="300"/>
+
         <Label x:Name="label"
                Text="Dragons Of The Caribbean"
                FontFamily="Lobster"
@@ -19,5 +20,6 @@
         <Entry x:Name="NameEntry" Text="Jane Doe" />
         <Button Text="Play" Clicked="OnButtonClicked"/>
         <Button Text="Quit" Clicked="OnButtonClicked"/>
+
     </StackLayout>
 </ContentPage>
