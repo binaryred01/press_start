@@ -9,7 +9,18 @@ namespace dragonsofthecaribbean
     {
         public DragonOptionPage()
         {
-            InitializeComponent();
+            //InitializeComponent();
+
+        }
+
+        //private void InitializeComponent()
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        public void OnDragonChoiceChange(object sender, ValueChangedEventArgs args)
+        {
+            Console.WriteLine($"{sender}");
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Dragons.DragonOptionPage"
+             x:Class="dragons_of_the_caribbean.DragonOptionPage"
              Title="Choose Your Dragon">
     <Grid Margin="20,35,20,20">
         <Grid.ColumnDefinitions>
@@ -9,6 +9,7 @@
         <ColumnDefinition Width="0.5*" />
     </Grid.ColumnDefinitions>
     <Grid.RowDefinitions>
+        <RowDefinition Height="50" />
         <RowDefinition Height="50" />
         <RowDefinition Height="50" />
     </Grid.RowDefinitions>
@@ -21,13 +22,23 @@
         <Label
             Grid.Column="1"
             Text="Options"
+            FontSize="Large"
+            Rotation="{Binding Source={x:Reference slider},
+                                  Path=Value}"
             HorizontalTextAlignment="Center"/>           
 
         <Label
             Grid.Row="2"
             Grid.ColumnSpan="2"
             Text="Select Dragon Colour"
-            HorizontalTextAlignment="Center"/>  
+            HorizontalTextAlignment="Center"/>
+
+        <Slider
+            x:Name="slider"
+            Maximum="360"
+            Grid.Row="3"
+            Grid.ColumnSpan="2"
+            />
         
     </Grid>
 </ContentPage>
