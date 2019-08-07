@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dragons.DragonOptionPage"
+             Title="Choose Your Dragon">
+    <Grid Margin="20,35,20,20">
+        <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.5*" />
+        <ColumnDefinition Width="0.5*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="50" />
+        <RowDefinition Height="50" />
+    </Grid.RowDefinitions>
+      
+        <Button
+            Text="&lt;"
+            HorizontalOptions="Start"
+            Height="50"/>
+
+        <Label
+            Grid.Column="1"
+            Text="Options"
+            HorizontalTextAlignment="Center"/>           
+
+        <Label
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            Text="Select Dragon Colour"
+            HorizontalTextAlignment="Center"/>  
+        
+    </Grid>
+</ContentPage>
