@@ -17,5 +17,10 @@ namespace dragons_of_the_caribbean
         {
             InitializeComponent();
         }
+
+        async void OnButtonClicked(object sender, EventArgs args)
+        {
+            await label.RelRotateTo(360, 1000);
+        }
     }
 }
